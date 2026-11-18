@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercial Cleaning Company in Calgary, AB | EFS Clean Inc.</title>
+<meta name="description" content="Commercial cleaning, janitorial, and specialty services in Calgary, Airdrie, Cochrane and Okotoks. Locally owned since 2005. Free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2A6299;
+  --blue-d:#1D4B78;
+  --navy:#0E2236;
+  --ink:#16222E;
+  --grey:#A8ABAE;
+  --grey-d:#5D6670;
+  --ice:#EEF3F8;
+  --line:#D9E1E9;
+  --paper:#FAFBFC;
+  --stripe:repeating-linear-gradient(135deg,var(--blue) 0 3px,transparent 3px 14px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Public Sans",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.disp{font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:800;letter-spacing:-.01em;line-height:1.02}
+.label{font-family:"Archivo",sans-serif;font-stretch:100%;font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:.7rem}
+.label::before{content:"";width:34px;height:10px;background:var(--stripe);background-size:auto}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:"Archivo",sans-serif;font-stretch:110%;font-weight:700;font-size:.95rem;letter-spacing:.04em;text-transform:uppercase;padding:1rem 1.6rem;border-radius:3px;transition:.25s;border:2px solid transparent;cursor:pointer}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--navy)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* utility bar */
+.util{background:var(--navy);color:#C9D6E3;font-size:.85rem}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;gap:1rem;flex-wrap:wrap}
+.util span{display:inline-flex;align-items:center;gap:.45rem}
+.util .dot{width:7px;height:7px;border-radius:50%;background:#4ADE80;box-shadow:0 0 0 4px rgba(74,222,128,.18)}
+.util a:hover{color:#fff}
+.util .r{display:flex;gap:1.6rem}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:86px}
+.logo img{height:62px;width:auto}
+nav ul{display:flex;gap:2.2rem;list-style:none;font-weight:600;font-size:.95rem}
+nav li{position:relative}
+nav a{padding:.4rem 0;transition:color .2s}
+nav a:hover{color:var(--blue)}
+nav .has>a::after{content:"";display:inline-block;width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin:0 0 3px 8px}
+nav .drop{position:absolute;top:150%;left:-1rem;background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue);min-width:290px;padding:.6rem 0;opacity:0;visibility:hidden;transition:.2s;box-shadow:0 20px 40px -20px rgba(14,34,54,.3)}
+nav li:hover .drop{opacity:1;visibility:visible;top:120%}
+nav .drop a{display:block;padding:.55rem 1.2rem;font-weight:500}
+nav .drop a:hover{background:var(--ice)}
+.hcta{display:flex;align-items:center;gap:1.2rem}
+.hphone{font-family:"Archivo",sans-serif;font-stretch:110%;font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:.5rem;color:var(--navy)}
+.hphone small{display:block;font-family:"Public Sans",sans-serif;font-weight:500;font-size:.72rem;color:var(--grey-d);letter-spacing:.06em;text-transform:uppercase}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--ink);margin:7px 8px}
+
+/* hero */
+.hero{position:relative;padding:4.5rem 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.2vw,4.7rem);color:var(--navy);margin:1.4rem 0 1.4rem}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero .q{font-family:"Archivo",sans-serif;font-stretch:100%;font-weight:600;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem}
+.hero p.lead{font-size:1.08rem;color:var(--grey-d);max-width:520px}
+.hero .ctas{display:flex;gap:1rem;margin-top:2.2rem;flex-wrap:wrap}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2.4rem}
+.towns span{font-size:.82rem;font-weight:600;padding:.35rem .8rem;border:1px solid var(--line);border-radius:40px;color:var(--grey-d)}
+.hero-art{position:relative;padding:0 0 3rem 3rem}
+.hero-art .ph{position:relative;z-index:2;aspect-ratio:4/4.4;overflow:hidden;border-radius:4px}
+.hero-art .ph img{width:100%;height:100%;object-fit:cover;object-position:62% center}
+.hero-art .f1,.hero-art .f2{position:absolute;inset:3rem 3rem 0 0;border:2px solid var(--blue);border-radius:4px;z-index:1;transform:translate(-1.5rem,1.5rem)}
+.hero-art .f2{border-color:var(--grey);transform:translate(-3rem,3rem)}
+.hero-art .badge{position:absolute;z-index:3;right:-1.4rem;top:2rem;width:118px;filter:drop-shadow(0 14px 22px rgba(0,0,0,.25));animation:spin 30s linear infinite}
+@keyframes spin{50%{transform:rotate(8deg)}}
+.hero-art .tag{position:absolute;z-index:3;left:0;bottom:5.5rem;background:#fff;padding:1rem 1.2rem;border-left:4px solid var(--blue);box-shadow:0 18px 40px -16px rgba(14,34,54,.35);max-width:240px}
+.hero-art .tag b{font-family:"Archivo",sans-serif;font-stretch:115%;font-size:1.1rem;display:block;color:var(--navy)}
+.hero-art .tag small{color:var(--grey-d);font-size:.82rem}
+
+/* ledger */
+.ledger{margin-top:4rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ledger .wrap{display:grid;grid-template-columns:repeat(3,1fr) 1.2fr}
+.ledger div.c{padding:2rem 2rem 2rem 0;border-right:1px solid var(--line)}
+.ledger div.c+div.c{padding-left:2rem}
+.ledger .n{font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:800;font-size:3rem;color:var(--blue);line-height:1}
+.ledger .n sub{font-size:1.2rem;vertical-align:baseline;color:var(--grey)}
+.ledger .t{font-weight:600;margin-top:.5rem;font-size:.95rem}
+.ledger .gc{padding:2rem 0 2rem 2rem;display:flex;flex-direction:column;justify-content:center;gap:.8rem}
+.ledger .gc p{font-size:.95rem;color:var(--grey-d)}
+.ledger .gc a{font-weight:700;color:var(--blue);display:inline-flex;gap:.4rem;align-items:center}
+
+/* logo marquee */
+.trust{padding:2.6rem 0;background:var(--paper)}
+.trust .wrap{display:flex;align-items:center;gap:2.5rem}
+.trust h2{font-family:"Archivo",sans-serif;font-stretch:100%;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--grey-d);min-width:150px;line-height:1.4;font-weight:600}
+.marq{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marq .track{display:flex;gap:3.5rem;width:max-content;animation:mq 40s linear infinite;align-items:center}
+.marq img{height:58px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.7;transition:.3s;mix-blend-mode:multiply}
+.marq img:hover{filter:none;opacity:1}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* services index */
+.svc{background:var(--navy);color:#fff;padding:6.5rem 0;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 3px,transparent 3px 22px)}
+.svc .head{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:3.6rem}
+.svc .label{color:#8FB6DD}
+.svc .label::before{background:repeating-linear-gradient(135deg,#8FB6DD 0 3px,transparent 3px 14px)}
+.svc h2{font-size:clamp(2rem,3.6vw,3.2rem);margin-top:1rem}
+.svc .head p{color:#B5C4D3;font-size:1.08rem}
+.idx{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:stretch}
+.idx ol{list-style:none;border-top:1px solid rgba(255,255,255,.15)}
+.idx li{border-bottom:1px solid rgba(255,255,255,.15)}
+.idx button{all:unset;cursor:pointer;width:100%;display:grid;grid-template-columns:3.2rem 1fr auto;align-items:center;padding:1.35rem 0;gap:.5rem;transition:.25s}
+.idx .no{font-family:"Archivo",sans-serif;font-weight:600;color:#6F8BA6;font-size:.9rem}
+.idx .nm{font-family:"Archivo",sans-serif;font-stretch:115%;font-weight:700;font-size:1.45rem;color:#C9D6E3;transition:.25s}
+.idx .ar{width:38px;height:38px;border:1px solid rgba(255,255,255,.25);border-radius:50%;display:grid;place-items:center;opacity:0;transform:translateX(-10px);transition:.25s}
+.idx li.on .nm,.idx button:hover .nm{color:#fff;transform:translateX(6px)}
+.idx li.on .no{color:#8FB6DD}
+.idx li.on .ar{opacity:1;transform:none;background:var(--blue);border-color:var(--blue)}
+.idx li.on button{padding-bottom:.6rem}
+.idx .d{display:none;color:#B5C4D3;padding:0 0 1.4rem 3.7rem;font-size:.97rem}
+.idx li.on .d{display:block}
+.idx .d a{color:#8FB6DD;font-weight:700;display:inline-block;margin-top:.5rem}
+.stage{position:relative;min-height:520px;border-radius:4px;overflow:hidden;background:#000}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .6s,transform 1.2s}
+.stage img.on{opacity:1;transform:none}
+.stage .cap{position:absolute;left:0;bottom:0;right:0;padding:1.4rem 1.6rem;background:linear-gradient(transparent,rgba(14,34,54,.9));display:flex;justify-content:space-between;align-items:end;z-index:2}
+.stage .cap b{font-family:"Archivo",sans-serif;font-stretch:115%;font-size:1.25rem}
+.stage .cap span{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#C9D6E3}
+
+/* one vendor */
+.vendor{padding:7rem 0 6rem;background:var(--ice);position:relative}
+.vendor .top{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center;margin-bottom:3.5rem}
+.vendor h2{font-size:clamp(2.2rem,4.4vw,3.9rem);color:var(--navy);margin-top:1rem}
+.vendor h2 span{color:var(--blue)}
+.vendor .top p{font-size:1.12rem;color:var(--grey-d)}
+.inv{background:#fff;border:1px solid var(--line);padding:1.8rem;border-radius:4px;position:relative;box-shadow:0 30px 50px -35px rgba(14,34,54,.4)}
+.inv::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--stripe)}
+.inv .row{display:flex;justify-content:space-between;padding:.6rem 0 .6rem .6rem;border-bottom:1px dashed var(--line);font-size:.93rem}
+.inv .row:last-child{border:0;font-weight:700;color:var(--blue);font-family:"Archivo",sans-serif;font-stretch:110%;font-size:1.05rem}
+.inv .row i{font-style:normal;color:var(--grey-d)}
+.inv h4{font-family:"Archivo",sans-serif;font-stretch:110%;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--grey-d);margin:0 0 .6rem .6rem}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px;grid-auto-flow:dense}
+.tile{position:relative;overflow:hidden;border-radius:4px;background:var(--navy)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.tile:hover img{transform:scale(1.06)}
+.tile .tt{position:absolute;left:0;right:0;bottom:0;padding:2.4rem 1rem .9rem;background:linear-gradient(transparent,rgba(14,34,54,.85));color:#fff;font-family:"Archivo",sans-serif;font-stretch:108%;font-weight:700;font-size:1rem;line-height:1.25;display:flex;justify-content:space-between;align-items:end;gap:.6rem}
+.tile .tt i{font-style:normal;font-size:.72rem;color:#C9D6E3;font-weight:500;letter-spacing:.1em}
+.t-w{grid-column:span 2}
+.t-h{grid-row:span 2}
+.t-text{background:var(--blue);color:#fff;padding:1.4rem;display:flex;flex-direction:column;justify-content:space-between}
+.t-text p{font-family:"Archivo",sans-serif;font-stretch:115%;font-weight:700;font-size:1.35rem;line-height:1.15}
+.t-text a{font-weight:700;font-size:.9rem;display:inline-flex;gap:.4rem;align-items:center}
+
+/* reviews */
+.reviews{padding:7rem 0}
+.reviews .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem}
+.reviews h2{font-size:clamp(2rem,3.4vw,3rem);color:var(--navy);margin:1rem 0 2rem}
+.who{display:flex;flex-direction:column;gap:.7rem}
+.who button{all:unset;cursor:pointer;display:flex;align-items:center;gap:1rem;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:4px;transition:.25s;background:#fff}
+.who button img{width:58px;height:44px;object-fit:contain}
+.who button b{display:block;font-size:1rem}
+.who button small{color:var(--grey-d);font-size:.82rem}
+.who button.on{border-color:var(--blue);box-shadow:inset 4px 0 0 var(--blue)}
+.qwrap{position:relative;padding-top:1rem}
+.qmark{font-family:Georgia,serif;font-size:9rem;line-height:.6;color:var(--ice);position:absolute;top:1.5rem;left:-1rem;z-index:0}
+.quote{display:none;position:relative;z-index:1}
+.quote.on{display:block;animation:fade .5s}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.quote .stars{color:#F2B33D;letter-spacing:.2em;font-size:1.1rem;margin-bottom:1.2rem}
+.quote p{font-size:1.3rem;line-height:1.6;color:var(--ink);margin-bottom:1rem;font-weight:500}
+.quote p+p{font-size:1.08rem;color:var(--grey-d);font-weight:400}
+.quote .by{margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.quote .by b{font-family:"Archivo",sans-serif;font-stretch:115%;font-size:1.1rem}
+.quote .by span{color:var(--grey-d);font-size:.9rem;display:block}
+.gr{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--blue);font-size:.92rem}
+
+/* about */
+.about{padding:0 0 7rem}
+.about .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:0;background:var(--navy);color:#fff;border-radius:4px;overflow:hidden}
+.about .pic{position:relative;min-height:560px}
+.about .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.about .pic figcaption{position:absolute;left:1.4rem;bottom:1.4rem;background:#fff;color:var(--navy);padding:.6rem 1rem;font-weight:700;font-size:.9rem;border-radius:3px}
+.about .txt{padding:3.6rem 3.4rem}
+.about .label{color:#8FB6DD}
+.about .label::before{background:repeating-linear-gradient(135deg,#8FB6DD 0 3px,transparent 3px 14px)}
+.about h2{font-size:clamp(2rem,3.2vw,2.8rem);margin:1rem 0 1.4rem}
+.about p{color:#C9D6E3;margin-bottom:1rem}
+.spec{margin-top:1.8rem;border-top:1px solid rgba(255,255,255,.15)}
+.spec div{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:.95rem}
+.spec dt{color:#8FB6DD}
+.spec dd{font-weight:700;text-align:right}
+
+/* sectors band */
+.band{position:relative;min-height:440px;display:flex;align-items:center;color:#fff;background:url("images/warehouse-cleaning-service-calgary.webp") center/cover}
+.band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,34,54,.92) 30%,rgba(14,34,54,.35))}
+.band .wrap{position:relative}
+.band h3{font-size:clamp(1.8rem,3.4vw,3rem);max-width:780px}
+.band ul{list-style:none;display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.band li{border:1px solid rgba(255,255,255,.4);padding:.5rem 1rem;border-radius:40px;font-weight:600;font-size:.92rem;backdrop-filter:blur(4px)}
+
+/* where + quote */
+.where{padding:7rem 0;background:var(--paper)}
+.where .grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem}
+.where h2{font-size:clamp(2rem,3.4vw,3rem);color:var(--navy);margin:1rem 0 .6rem}
+.where .sub{font-weight:600;color:var(--blue);margin-bottom:1.2rem}
+.where p{color:var(--grey-d);margin-bottom:1rem}
+.cities{list-style:none;margin:2rem 0;border-top:2px solid var(--navy)}
+.cities li{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0;border-bottom:1px solid var(--line);font-family:"Archivo",sans-serif;font-stretch:120%;font-weight:800;font-size:1.6rem;color:var(--navy)}
+.cities li small{font-family:"Public Sans",sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey-d)}
+.map{border-radius:4px;overflow:hidden;border:1px solid var(--line);height:240px}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.4)}
+.form{background:#fff;border:1px solid var(--line);border-radius:4px;padding:2.6rem;box-shadow:0 40px 70px -45px rgba(14,34,54,.45);position:sticky;top:110px;align-self:start}
+.form h3{font-size:1.9rem;color:var(--navy);margin-bottom:.4rem}
+.form .note{color:var(--grey-d);font-size:.93rem;margin-bottom:1.6rem}
+.steps{display:flex;gap:.4rem;margin-bottom:1.6rem}
+.steps i{flex:1;height:4px;background:var(--line);border-radius:4px;transition:.3s}
+.steps i.on{background:var(--blue)}
+fieldset{border:0;display:none}
+fieldset.on{display:block;animation:fade .4s}
+legend{font-family:"Archivo",sans-serif;font-stretch:110%;font-weight:700;font-size:1.05rem;margin-bottom:1rem}
+legend small{display:block;font-family:"Public Sans",sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:.3rem}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.opts label{position:relative;cursor:pointer}
+.opts input{position:absolute;opacity:0}
+.opts span{display:block;padding:.85rem 1rem;border:1px solid var(--line);border-radius:3px;font-weight:600;font-size:.92rem;transition:.2s}
+.opts input:checked+span{border-color:var(--blue);background:var(--ice);color:var(--blue);box-shadow:inset 3px 0 0 var(--blue)}
+.fld{display:grid;gap:.8rem}
+.fld input,.fld textarea{width:100%;padding:.9rem 1rem;border:1px solid var(--line);border-radius:3px;font:inherit;font-size:.95rem}
+.fld input:focus,.fld textarea:focus{outline:2px solid var(--blue);border-color:transparent}
+.fnav{display:flex;justify-content:space-between;align-items:center;margin-top:1.6rem}
+.fnav .back{background:none;border:0;font-weight:700;color:var(--grey-d);cursor:pointer;font:inherit;font-weight:700}
+.or{margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.92rem;color:var(--grey-d)}
+.or a{color:var(--blue);font-weight:700}
+
+/* footer */
+footer{background:var(--navy);color:#B5C4D3;padding:5rem 0 0;font-size:.95rem;position:relative;overflow:hidden}
+footer .big{font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:900;font-size:clamp(3rem,10vw,9.5rem);line-height:.85;color:rgba(255,255,255,.05);white-space:nowrap;position:absolute;bottom:3.6rem;left:50%;transform:translateX(-50%);pointer-events:none}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:3rem;position:relative}
+footer .chip{background:#fff;display:inline-block;padding:.8rem 1rem;border-radius:4px;margin-bottom:1.4rem}
+footer .chip img{height:58px}
+footer h5{font-family:"Archivo",sans-serif;font-stretch:110%;color:#fff;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem}
+footer ul{list-style:none;display:grid;gap:.55rem}
+footer a:hover{color:#fff}
+.soc{display:flex;gap:.6rem;margin-top:1.4rem}
+.soc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:grid;place-items:center;transition:.2s}
+.soc a:hover{background:var(--blue);border-color:var(--blue)}
+.soc svg{width:17px;height:17px;fill:currentColor}
+.fbot{margin-top:7rem;border-top:1px solid rgba(255,255,255,.12);padding:1.4rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.85rem;position:relative}
+.fbot .l{display:flex;gap:1.4rem;flex-wrap:wrap}
+.fbot b{color:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+/* mobile call bar */
+.mbar{display:none}
+
+@media(max-width:1080px){
+  nav,.hphone{display:none}
+  .burger{display:block}
+  nav.open{display:block;position:absolute;top:86px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:1rem 4vw}
+  nav.open ul{flex-direction:column;gap:.4rem}
+  nav.open .drop{display:none}
+  .hero .wrap,.svc .head,.idx,.vendor .top,.reviews .grid,.about .grid,.where .grid{grid-template-columns:1fr;gap:2.6rem}
+  .ledger .wrap{grid-template-columns:1fr 1fr}
+  .ledger div.c:nth-child(2){border-right:0}
+  .ledger div.c+div.c{padding-left:2rem}
+  .ledger div.c:nth-child(3){padding-left:0}
+  .ledger .gc{grid-column:span 2;padding-left:0;border-top:1px solid var(--line)}
+  .mosaic{grid-template-columns:repeat(2,1fr)}
+  .stage{min-height:380px}
+  footer .grid{grid-template-columns:1fr 1fr}
+  .form{position:static}
+}
+@media(max-width:640px){
+  body{font-size:15.5px}
+  .util .r span:not(:last-child){display:none}
+  .hero-art{padding:0 0 2rem 2rem}
+  .hero-art .badge{width:84px;right:-.4rem}
+  .hero-art .tag{bottom:3.5rem}
+  .ledger .n{font-size:2.3rem}
+  .trust .wrap{flex-direction:column;align-items:flex-start;gap:1rem}
+  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .t-w{grid-column:span 2}
+  .idx .nm{font-size:1.15rem}
+  .about .txt{padding:2.4rem 1.6rem}
+  .about .pic{min-height:340px}
+  .opts{grid-template-columns:1fr}
+  .form{padding:1.8rem}
+  footer .grid{grid-template-columns:1fr}
+  .band{background-attachment:scroll}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60}
+  .mbar a{flex:1;text-align:center;padding:1rem;font-weight:700;color:#fff;background:var(--navy)}
+  .mbar a+a{background:var(--blue)}
+  body{padding-bottom:54px}
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span><i class="dot"></i> Available 24/7 &nbsp;·&nbsp; Locally owned since 2005</span>
+    <div class="r">
+      <span>1001 1 St SE, Calgary, AB T2G 5G3</span>
+      <span>Proud ISSA Member</span>
+      <a href="tel:14039493344"><span>(403) 949-3344</span></a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo"><img src="images/efs-clean-logo.jpg" alt="EFS Clean logo"></a>
+    <nav id="nav">
+      <ul>
+        <li class="has"><a href="#services">Services</a>
+          <div class="drop">
+            <a href="#services">Commercial Janitorial Cleaning Services</a>
+            <a href="#services">Industrial Cleaning Services</a>
+            <a href="#services">Office Cleaning Service</a>
+            <a href="#services">Restaurant Kitchen Deep Cleaning</a>
+          </div>
+        </li>
+        <li class="has"><a href="#about">About Us</a>
+          <div class="drop">
+            <a href="#about">Our Team at EFS Clean</a>
+            <a href="#about">100% Satisfaction Guarantee</a>
+            <a href="#about">What Makes EFS Clean Different?</a>
+            <a href="#where">Where We Clean</a>
+          </div>
+        </li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#quote">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="hcta">
+      <a class="hphone" href="tel:14039493344"><span><small>Call anytime</small>(403) 949-3344</span></a>
+      <a class="btn btn-blue" href="#quote">Get Started</a>
+      <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="rv">
+      <span class="label">Commercial Cleaning · Calgary, AB</span>
+      <h1 class="disp">Commercial Cleaning Company in <em>Calgary,&nbsp;AB</em></h1>
+      <p class="q">Looking for a Commercial Cleaner You Can Trust?</p>
+      <p class="lead">EFS Clean is a trusted commercial cleaning company serving Calgary, Airdrie, Cochrane, and Okotoks since 2005.</p>
+      <div class="ctas">
+        <a href="#quote" class="btn btn-blue">Get Started
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="tel:14039493344" class="btn btn-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          (403) 949-3344</a>
+      </div>
+      <div class="towns"><span>Calgary</span><span>Airdrie</span><span>Cochrane</span><span>Okotoks</span></div>
+    </div>
+    <div class="hero-art rv">
+      <span class="f2"></span><span class="f1"></span>
+      <div class="ph"><img src="images/efs-clean-commercial-cleaning.jpg" alt="EFS Clean commercial cleaning in a Calgary showroom"></div>
+      <img class="badge" src="images/efs-clean-trusted-since-2005.png" alt="Trusted since 2005">
+      <div class="tag"><b>Available 24/7</b><small>Every job backed by our 100% satisfaction guarantee.</small></div>
+    </div>
+  </div>
+  <div class="ledger">
+    <div class="wrap">
+      <div class="c"><div class="n" data-count="100" data-suf="%">0%</div><div class="t">Satisfaction Guarantee</div></div>
+      <div class="c"><div class="n" data-count="4.9" data-dec="1" data-suf="<sub>/5</sub>">0</div><div class="t">Average Client Rating</div></div>
+      <div class="c"><div class="n" data-count="21" data-suf="+">0+</div><div class="t">Years of Experience</div></div>
+      <div class="gc">
+        <p>Commercial janitorial, office, industrial, warehouse, floor, kitchen, ceiling and specialty cleaning.</p>
+        <a href="#reviews">Read client reviews <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <h2>Trusted by Calgary Businesses</h2>
+    <div class="marq"><div class="track" id="track">
+      <img src="images/clients/CJCC.webp" alt="Calgary Jewish Community Centre">
+      <img src="images/clients/Earls-kitchen-bar.webp" alt="Earls Kitchen + Bar">
+      <img src="images/clients/edo-japan-logo.png" alt="Edo Japan">
+      <img src="images/clients/Cobs.webp" alt="Cobs Bread">
+      <img src="images/clients/ace-casino-calgary-logo.webp" alt="Ace Casino Calgary">
+      <img src="images/clients/basecamp-motorsports-logo.webp" alt="Basecamp Motorsports">
+      <img src="images/clients/original-joes-logo.webp" alt="Original Joe's">
+      <img src="images/clients/Blowers2.webp" alt="Blowers and Grafton">
+      <img src="images/clients/sobeys.webp" alt="Sobeys">
+      <img src="images/clients/Thermoking.png" alt="Thermo King">
+      <img src="images/clients/Varsteel-logo-calgary.webp" alt="Varsteel">
+      <img src="images/clients/trico-centre-logo.webp" alt="Trico Centre">
+      <img src="images/clients/costco-logo-calgary.webp" alt="Costco">
+      <img src="images/clients/ska-spa-1.webp" alt="SKA Spa">
+    </div></div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <span class="label">Our Cleaning Services</span>
+        <h2 class="disp">Calgary’s Commercial Cleaning Company</h2>
+      </div>
+      <p>At EFS Clean, we specialize in commercial cleaning, janitorial, and specialty services across Calgary, Airdrie, Cochrane, and Okotoks.</p>
+    </div>
+    <div class="idx rv">
+      <ol id="idx">
+        <li class="on" data-img="0"><button><span class="no">01</span><span class="nm">Janitorial Cleaning</span><span class="ar">→</span></button><div class="d">Commercial janitorial cleaning for Calgary businesses, from daily upkeep to scheduled service.<br><a href="#quote">Request a quote →</a></div></li>
+        <li data-img="1"><button><span class="no">02</span><span class="nm">Office Cleaning</span><span class="ar">→</span></button><div class="d">Office cleaning that keeps workspaces, desks and shared areas clean for your team and visitors.<br><a href="#quote">Request a quote →</a></div></li>
+        <li data-img="2"><button><span class="no">03</span><span class="nm">Industrial Cleaning</span><span class="ar">→</span></button><div class="d">Industrial cleaning for facilities, plants and production spaces across the Calgary region.<br><a href="#quote">Request a quote →</a></div></li>
+        <li data-img="3"><button><span class="no">04</span><span class="nm">Restaurant Deep Cleaning</span><span class="ar">→</span></button><div class="d">Restaurant kitchen deep cleaning for busy commercial kitchens and multi-location groups.<br><a href="#quote">Request a quote →</a></div></li>
+        <li data-img="4"><button><span class="no">05</span><span class="nm">Certified Kitchen Exhaust Hood Cleaning</span><span class="ar">→</span></button><div class="d">Certified kitchen exhaust hood cleaning for restaurants and commercial kitchens.<br><a href="#quote">Request a quote →</a></div></li>
+        <li data-img="5"><button><span class="no">06</span><span class="nm">Project Cleaning</span><span class="ar">→</span></button><div class="d">One-time project cleaning for commercial and industrial spaces.<br><a href="#quote">Request a quote →</a></div></li>
+      </ol>
+      <div class="stage" id="stage">
+        <img class="on" src="images/commercial-janitorial-cleaning-service-calgary.jpg" alt="Janitorial cleaning">
+        <img src="images/office-cleaning-service-calgary.jpg" alt="Office cleaning">
+        <img src="images/industrial-cleaning-service-calgary.jpg" alt="Industrial cleaning">
+        <img src="images/restaurant-deep-cleaning.webp" alt="Restaurant deep cleaning">
+        <img src="images/Certified-Kitchen-Exhaust-Hood-Cleaning.webp" alt="Certified kitchen exhaust hood cleaning">
+        <img src="images/project-cleaning.webp" alt="Project cleaning">
+        <div class="cap"><b id="capt">Janitorial Cleaning</b><span id="capn">01 / 06</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vendor">
+  <div class="wrap">
+    <div class="top rv">
+      <div>
+        <span class="label">One-Vendor Cleaning Services</span>
+        <h2 class="disp">One contact.<br><span>One invoice.</span></h2>
+        <p style="margin-top:1.4rem">Offering ALL of these services; one contact, one invoice, saving clients time, money, and hassle.</p>
+      </div>
+      <div class="inv">
+        <h4>Your EFS Clean account</h4>
+        <div class="row">Janitorial &amp; office cleaning <i>✓</i></div>
+        <div class="row">Kitchen exhaust hood &amp; grease trap <i>✓</i></div>
+        <div class="row">Floors, carpets &amp; ceilings <i>✓</i></div>
+        <div class="row">Windows, high reach &amp; pressure washing <i>✓</i></div>
+        <div class="row">Supply purchasing &amp; management <i>✓</i></div>
+        <div class="row">One contact · One invoice <span>EFS Clean</span></div>
+      </div>
+    </div>
+    <div class="mosaic">
+      <a href="#quote" class="tile t-w t-h rv"><img src="images/pressure-washing-service-calgary.jpg" alt=""><span class="tt">Pressure Washing Service<i>01</i></span></a>
+      <a href="#quote" class="tile t-h rv"><img src="images/floor-refinishing-calgary.webp" alt=""><span class="tt">Floor Deep Cleaning &amp; Refinishing<i>02</i></span></a>
+      <a href="#quote" class="tile rv"><img src="images/full-kitchen-deep-cleaning.webp" alt=""><span class="tt">Full Kitchen Deep Cleaning<i>03</i></span></a>
+      <a href="#quote" class="tile rv"><img src="images/supplies-management-program.webp" alt=""><span class="tt">Supply Purchasing and Management<i>04</i></span></a>
+      <a href="#quote" class="tile t-w rv"><img src="images/floor-cleaning-calgary.webp" alt=""><span class="tt">Floor Cleaning Service<i>05</i></span></a>
+      <a href="#quote" class="tile rv"><img src="images/grease-trap-cleaning-calgary.webp" alt=""><span class="tt">Grease Trap Cleaning<i>06</i></span></a>
+      <a href="#quote" class="tile t-w rv"><img src="images/commercial-carpet-cleaning-calgary.webp" alt=""><span class="tt">Commercial Carpet Cleaning<i>07</i></span></a>
+      <a href="#quote" class="tile t-h rv"><img src="images/Ceiling-Cleaning-Services-Calgary.webp" alt=""><span class="tt">Ceiling Cleaning Services<i>08</i></span></a>
+      <a href="#quote" class="tile t-w rv"><img src="images/warehouse-cleaning-service-calgary.webp" alt=""><span class="tt">Warehouse Cleaning Services<i>09</i></span></a>
+      <a href="#quote" class="tile t-w rv"><img src="images/Industrial-Office-Cleaning-Calgary.webp" alt=""><span class="tt">Industrial Office Cleaning<i>10</i></span></a>
+      <a href="#quote" class="tile rv"><img src="images/Disinfection-Cleaning-Service-Calgary.webp" alt=""><span class="tt">Electrostatic Disinfection<i>11</i></span></a>
+      <a href="#quote" class="tile rv"><img src="images/Certified-Kitchen-Exhaust-Hood-Cleaning-Calgary.webp" alt=""><span class="tt">Certified Kitchen Exhaust Hood Cleaning<i>12</i></span></a>
+      <a href="#quote" class="tile t-w rv"><img src="images/High-Reach-Cleaning-Calgary-EFS-Clean.webp" alt=""><span class="tt">High Reach Cleaning<i>13</i></span></a>
+      <a href="#quote" class="tile rv"><img src="images/Low-Rise-Calgary-Commercial-Window-Cleaning.webp" alt=""><span class="tt">Low-Rise Commercial Window Cleaning<i>14</i></span></a>
+      <a href="#quote" class="tile t-w rv"><img src="images/Deep-Cleaning-Services-in-Calgary.webp" alt=""><span class="tt">Deep Cleaning Services<i>15</i></span></a>
+      <div class="tile t-text t-w rv"><p>All under one vendor. Tell us what your facility needs.</p><a href="#quote">Build your quote →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap grid">
+    <div class="rv">
+      <span class="label">Client Reviews</span>
+      <h2 class="disp">What Our Calgary Cleaning Clients Say</h2>
+      <div class="who" id="who">
+        <button class="on" data-q="0"><img src="images/clients/ska-spa-1.webp" alt=""><span><b>SKA Thermal Spa</b><small>Calgary, Alberta</small></span></button>
+        <button data-q="1"><img src="images/clients/ace-casino-calgary-logo.webp" alt=""><span><b>Ace Casino Calgary</b><small>Calgary, Alberta</small></span></button>
+        <button data-q="2"><img src="images/clients/CJCC.webp" alt=""><span><b>Calgary Jewish Community Centre</b><small>Calgary, Alberta</small></span></button>
+      </div>
+    </div>
+    <div class="qwrap rv">
+      <div class="qmark">“</div>
+      <div class="quote on">
+        <div class="stars">★★★★★</div>
+        <p>We recently had the pleasure of working with EFS Clean for deep cleaning. The results were outstanding; the before-and-after difference was truly impressive.</p>
+        <p>Not only does EFS Clean deliver top-notch service, but their customer service is also exceptional. I would highly recommend EFS Clean to any commercial business in need of reliable and professional janitorial services. 10/10!</p>
+        <div class="by"><div><b>SKA Thermal Spa</b><span>Calgary, Alberta</span></div><a class="gr" href="#">Google Reviews →</a></div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>We’ve been working with EFS Clean for a while now, and the experience has been excellent. Their team is reliable, responsive, and proactive in maintaining our kitchen facilities to a very high standard.</p>
+        <p>The quality of service has consistently met our needs, and I’ve found the communication and follow-up to be outstanding. Overall, I would highly recommend EFS Clean to any multi-location restaurant group looking for dependable and professional kitchen maintenance services.</p>
+        <div class="by"><div><b>Ace Casino Calgary</b><span>Calgary, Alberta</span></div><a class="gr" href="#">Google Reviews →</a></div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Since changing our janitorial company to EFS Clean, we have seen a noticeable improvement in the cleanliness of our building. The company is very responsive to any new requests we might have, and their staff team is a pleasure to work with.</p>
+        <p>Feedback from our staff and clients has been extremely positive, and the cleanliness of our facility serves to enhance the experience of our clients.</p>
+        <div class="by"><div><b>Calgary Jewish Community Centre</b><span>Calgary, Alberta</span></div><a class="gr" href="#">Google Reviews →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="grid rv">
+      <figure class="pic">
+        <img src="images/EFS-Clean-Owners-John-Kelly.webp" alt="John and Kelly, owners of EFS Clean">
+        <figcaption>John and Kelly</figcaption>
+      </figure>
+      <div class="txt">
+        <span class="label">About EFS Clean</span>
+        <h2 class="disp">Built on value and accountability.</h2>
+        <p>Since 2005, EFS Clean has been trusted to clean and maintain millions of square feet of commercial and industrial space across Calgary, Airdrie, Cochrane, and Okotoks.</p>
+        <p>Founded by John Kangles, who came from the distribution side of the cleaning industry and saw too many companies competing on price instead of quality, EFS Clean was built around value and accountability.</p>
+        <dl class="spec">
+          <div><dt>Serving since</dt><dd>2005</dd></div>
+          <div><dt>Management experience</dt><dd>60+ years combined</dd></div>
+          <div><dt>Ownership</dt><dd>Locally owned &amp; operated</dd></div>
+          <div><dt>Membership</dt><dd>Proud ISSA member</dd></div>
+          <div><dt>Availability</dt><dd>24/7</dd></div>
+          <div><dt>Every job</dt><dd>100% satisfaction guarantee</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap rv">
+    <span class="label" style="color:#8FB6DD">Who we clean for</span>
+    <h3 class="disp" style="margin-top:1rem">Trusted by many Calgary institutions, including Costco, Cobs Bread, and the Calgary Jewish Community Centre.</h3>
+    <ul><li>Offices</li><li>Restaurants</li><li>Industrial facilities</li><li>Recreation centres</li><li>Auto dealerships</li></ul>
+  </div>
+</section>
+
+<section class="where" id="where">
+  <div class="wrap grid">
+    <div class="rv">
+      <span class="label">Where We Clean</span>
+      <h2 class="disp">Calgary &amp; surrounding communities</h2>
+      <p class="sub">Commercial cleaning across Calgary and surrounding communities</p>
+      <p>EFS Clean provides commercial janitorial, industrial, and specialty cleaning for businesses across Calgary and the surrounding region. Since 2005, we’ve cared for offices, restaurants, and industrial facilities in Calgary, Airdrie, Cochrane, and Okotoks.</p>
+      <p>We’re locally owned, based in the heart of the city, and available 24/7.</p>
+      <ul class="cities">
+        <li>Calgary <small>Head office</small></li>
+        <li>Airdrie <small>Service area</small></li>
+        <li>Cochrane <small>Service area</small></li>
+        <li>Okotoks <small>Service area</small></li>
+      </ul>
+      <div class="map"><iframe loading="lazy" title="EFS Clean location" src="https://maps.google.com/maps?q=EFS%20Clean%20Inc%2C%201001%201%20St%20SE%2C%20Calgary%2C%20AB&z=13&output=embed"></iframe></div>
+    </div>
+    <form class="form rv" id="quote" onsubmit="event.preventDefault();this.querySelector('.done').style.display='block';">
+      <h3 class="disp">Ready to Schedule Your Cleaning?</h3>
+      <p class="note">Not sure if we cover your location? Request a quote, and we’ll confirm right away.</p>
+      <div class="steps"><i class="on"></i><i></i><i></i></div>
+      <fieldset class="on">
+        <legend><small>Step 1 of 3</small>What type of facility?</legend>
+        <div class="opts">
+          <label><input type="radio" name="fac" checked><span>Office</span></label>
+          <label><input type="radio" name="fac"><span>Restaurant</span></label>
+          <label><input type="radio" name="fac"><span>Industrial facility</span></label>
+          <label><input type="radio" name="fac"><span>Recreation centre</span></label>
+          <label><input type="radio" name="fac"><span>Auto dealership</span></label>
+          <label><input type="radio" name="fac"><span>Warehouse</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><small>Step 2 of 3</small>Which services do you need?</legend>
+        <div class="opts">
+          <label><input type="checkbox" checked><span>Janitorial Cleaning</span></label>
+          <label><input type="checkbox"><span>Office Cleaning</span></label>
+          <label><input type="checkbox"><span>Industrial Cleaning</span></label>
+          <label><input type="checkbox"><span>Restaurant Deep Cleaning</span></label>
+          <label><input type="checkbox"><span>Kitchen Exhaust Hood</span></label>
+          <label><input type="checkbox"><span>Project Cleaning</span></label>
+          <label><input type="checkbox"><span>Floor &amp; Carpet</span></label>
+          <label><input type="checkbox"><span>Other specialty service</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><small>Step 3 of 3</small>Where should we send your quote?</legend>
+        <div class="opts" style="margin-bottom:.8rem">
+          <label><input type="radio" name="city" checked><span>Calgary</span></label>
+          <label><input type="radio" name="city"><span>Airdrie</span></label>
+          <label><input type="radio" name="city"><span>Cochrane</span></label>
+          <label><input type="radio" name="city"><span>Okotoks</span></label>
+        </div>
+        <div class="fld">
+          <input placeholder="Your name" required>
+          <input placeholder="Company" >
+          <input type="tel" placeholder="Phone" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <p class="done" style="display:none;margin-top:1rem;color:var(--blue);font-weight:700">Thanks! We’ll be in touch shortly.</p>
+      </fieldset>
+      <div class="fnav">
+        <button type="button" class="back" id="back" style="visibility:hidden">← Back</button>
+        <button type="button" class="btn btn-blue" id="next">Next step →</button>
+      </div>
+      <p class="or">Prefer to talk? Call <a href="tel:14039493344">(403) 949-3344</a>, we’re available 24/7.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="big">EFS CLEAN</div>
+  <div class="wrap grid">
+    <div>
+      <span class="chip"><img src="images/efs-clean-logo.jpg" alt="EFS Clean"></span>
+      <p>A trusted commercial cleaning company serving Calgary, Airdrie, Cochrane, and Okotoks since 2005.</p>
+      <div class="soc">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></a>
+        <a href="#" aria-label="Google Reviews"><svg viewBox="0 0 24 24"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zM6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9zM12 6c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 3.1 7.5L6.4 10C7.2 7.8 9.4 6 12 6z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Commercial Janitorial Cleaning</a></li>
+        <li><a href="#services">Industrial Cleaning</a></li>
+        <li><a href="#services">Office Cleaning</a></li>
+        <li><a href="#services">Restaurant Kitchen Deep Cleaning</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>About Us</h5>
+      <ul>
+        <li><a href="#about">Our Team at EFS Clean</a></li>
+        <li><a href="#about">100% Satisfaction Guarantee</a></li>
+        <li><a href="#about">What Makes EFS Clean Different?</a></li>
+        <li><a href="#where">Where We Clean</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact Us</h5>
+      <ul>
+        <li>EFS Clean Inc.<br>1001 1 St SE, Calgary, AB T2G 5G3</li>
+        <li><a href="tel:14039493344"><b style="color:#fff">(403) 949-3344</b></a></li>
+        <li>Available 24/7</li>
+        <li><a href="#quote" style="color:#8FB6DD;font-weight:700">Get Started →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap fbot">
+    <span>© 2026 EFS Clean Inc. All rights reserved.</span>
+    <div class="l"><a href="#">Privacy</a><a href="#">Site Map</a><span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener"><b>Cleaning Digital</b></a>.</span></div>
+  </div>
+</footer>
+
+<div class="mbar"><a href="tel:14039493344">Call (403) 949-3344</a><a href="#quote">Get Started</a></div>
+
+<script>
+// marquee duplicate
+const tr=document.getElementById('track');tr.innerHTML+=tr.innerHTML;
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// counters
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,to=+el.dataset.count,dec=+(el.dataset.dec||0),suf=el.dataset.suf||'';let t0=null;
+const step=t=>{t0??=t;const p=Math.min((t-t0)/1400,1),v=to*(1-Math.pow(1-p,3));el.innerHTML=v.toFixed(dec)+suf;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);co.unobserve(el)}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+// services index
+const items=[...document.querySelectorAll('#idx li')],imgs=[...document.querySelectorAll('#stage img')];
+items.forEach((li,i)=>li.querySelector('button').addEventListener('click',()=>{
+  items.forEach(x=>x.classList.remove('on'));imgs.forEach(x=>x.classList.remove('on'));
+  li.classList.add('on');imgs[i].classList.add('on');
+  document.getElementById('capt').textContent=li.querySelector('.nm').textContent;
+  document.getElementById('capn').textContent=String(i+1).padStart(2,'0')+' / 06';
+}));
+
+// reviews
+const wb=[...document.querySelectorAll('#who button')],qs=[...document.querySelectorAll('.quote')];
+wb.forEach((b,i)=>b.addEventListener('click',()=>{wb.forEach(x=>x.classList.remove('on'));qs.forEach(x=>x.classList.remove('on'));b.classList.add('on');qs[i].classList.add('on')}));
+
+// quote steps
+let s=0;const fs=[...document.querySelectorAll('#quote fieldset')],bars=[...document.querySelectorAll('.steps i')],nx=document.getElementById('next'),bk=document.getElementById('back');
+function go(n){s=n;fs.forEach((f,i)=>f.classList.toggle('on',i===s));bars.forEach((b,i)=>b.classList.toggle('on',i<=s));bk.style.visibility=s?'visible':'hidden';nx.textContent=s===2?'Request My Quote':'Next step →'}
+nx.addEventListener('click',()=>{if(s<2)go(s+1);else document.getElementById('quote').requestSubmit()});
+bk.addEventListener('click',()=>go(s-1));
+</script>
+</body>
+</html>
